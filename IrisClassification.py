@@ -28,4 +28,7 @@ dataset = pandas.read_csv(url, names=names)
 
 #Descriptions
 #Prints a set of numerical data about the dataset
-print(dataset.describe())
+#print(dataset.describe())
+
+#class Distribution
+print(dataset.groupby('class').size())
