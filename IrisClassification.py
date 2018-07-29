@@ -40,3 +40,7 @@ plt.show()
 #Histograms
 dataset.hist()
 plt.show()
+
+#Scatter Plot Matrix
+scatter_matrix(dataset)
+plt.show()
