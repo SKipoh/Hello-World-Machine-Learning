@@ -18,3 +18,21 @@ url = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
 names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
 dataset = pandas.read_csv(url, names=names)
 
+#Shape
+#Prints how many instances and how many attributes the data contains
+#print(dataset.shape)
+
+#Head
+#Shows the number of rows specificied, in this case, 20
+#print(dataset.head(20))
+
+#Descriptions
+#Prints a set of numerical data about the dataset
+#print(dataset.describe())
+
+#class Distribution
+#print(dataset.groupby('class').size())
+
+#Box and Whisker Plots
+dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+plt.show()
