@@ -36,3 +36,7 @@ dataset = pandas.read_csv(url, names=names)
 #Box and Whisker Plots
 dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
 plt.show()
+
+#Histograms
+dataset.hist()
+plt.show()
